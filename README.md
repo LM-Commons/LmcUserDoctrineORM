@@ -1,22 +1,25 @@
-ZfcUserDoctrineORM
+> ## This is work in progress.  This repo will eventually host a Laminas migrated version of ZfcUserDoctrineORM
+
+
+LmcUserDoctrineORM
 ==================
-Version 0.1.1 Created by Kyle Spraggs and the ZF-Commons team
+Based on ZfcUserDoctrineORM by Kyle Spraggs and the ZF-Commons team
 
 Introduction
 ------------
-ZfcUserDoctrineORM is a Doctrine2 ORM storage adapter for [ZfcUser](https://github.com/ZF-Commons/ZfcUser).
+LmcUserDoctrineORM is a Doctrine2 ORM storage adapter for [LmcUser](https://github.com/LM-Commons/LmcUser).
 
 Options
 -------
 
 The following options are available:
 
-- **enable_default_entities** - Boolean value, determines if the default User entity should be enabled. Set it to false in order to extend ZfcUser\Entity\User with your own entity. Default is true.
+- **enable_default_entities** - Boolean value, determines if the default User entity should be enabled. Set it to false in order to extend LmcUser\Entity\User with your own entity. Default is true.
 
 Dependencies
 ------------
 
-- [ZfcUser](https://github.com/ZF-Commons/ZfcUser)
+- [LmcUser](https://github.com/LM-Commons/LmcUser)
 - [DoctrineModule](https://github.com/doctrine/DoctrineModule)
 - [DoctrineORMModule](https://github.com/doctrine/DoctrineORMModule)
 
@@ -26,29 +29,28 @@ Set up Database Connection Settings for Doctrine ORM:
 
 Namely, go to [Doctrine Connection Settings](https://github.com/doctrine/DoctrineORMModule#connection-settings), and copy/paste/modify the example configuration file content into your `config/autoload/doctrine.orm.local.php`.  
 
-Install Zfc Components:
+Install Lmc Components:
 
-    php composer.phar require zf-commons/zfc-user-doctrine-orm
+    php composer.phar require lm-commons/lmc-user-doctrine-orm
 
 Set up your Modules in `config/application/application.config.php`, something like
 
     'modules' => array(
         'DoctrineModule',
         'DoctrineORMModule',
-        'ZfcBase',
-        'ZfcUser',
-        'ZfcUserDoctrineORM',
+        'LmcUser',
+        'LmcUserDoctrineORM',
         'Application',
     ),
 
-Now, you can use [ZfcUser SQL schema](https://github.com/ZF-Commons/ZfcUser/tree/master/data) to set up your database tables.
+Now, you can use [LmcUser SQL schema](https://github.com/LM-Commons/LmcUser/tree/master/data) to set up your database tables.
 
 Alternatively, you can use `doctrine-module` to do this work for you:
 
     vendor/bin/doctrine-module orm:schema-tool:update --dump-sql
 
 
-Note: If you want to use a different table schema or user entity then you have to set `enable_default_entities` to `false` in the zfcuser [config file](https://github.com/ZF-Commons/ZfcUser/blob/1.x/config/zfcuser.global.php.dist)
+Note: If you want to use a different table schema or user entity then you have to set `enable_default_entities` to `false` in the lmcuser [config file](https://github.com/LM-Commons/LmcUser/blob/master/config/lmcuser.global.php.dist)
 
 
 If SQL looks okay, do: 

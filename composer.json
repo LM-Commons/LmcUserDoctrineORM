@@ -1,14 +1,14 @@
 {
-    "name": "zf-commons/zfc-user-doctrine-orm",
-    "description": "Doctrine2 ORM storage adapter for ZfcUser.",
+    "name": "lm-commons/lmc-user-doctrine-orm",
+    "description": "Doctrine2 ORM storage adapter for LmcUser.",
     "type": "library",
     "license": "BSD-3-Clause",
     "keywords": [
-        "zf2"
+        "laminas", "LmcUser"
     ],
     "minimum-stability": "dev",
     "prefer-stable": true,
-    "homepage": "https://github.com/ZF-Commons/ZfcUserDoctrineORM",
+    "homepage": "https://github.com/LM-Commons/LmcUserDoctrineORM",
     "authors": [
         {
             "name": "Evan Coury",
@@ -19,19 +19,21 @@
             "name": "Kyle Spraggs",
             "email": "theman@spiffyjr.me",
             "homepage": "http://www.spiffyjr.me/"
+        },
+        {
+            "name": "Alexander Zamponi",
+            "email": "alex@zamponi.biz",
+            "homepage": "https://www.zamponi.biz/"
         }
     ],
     "require": {
-        "php": ">=5.3.3",
-        "zf-commons/zfc-user": "*",
-        "doctrine/doctrine-orm-module": "~1.0"
+        "php": ">=7.3",
+        "lm-commons/lmc-user": "~3.3",
+        "doctrine/doctrine-orm-module": "~3.0"
     },
     "autoload": {
-        "psr-0": {
-            "ZfcUserDoctrineORM": "src/"
-        },
-        "classmap": [
-            "./"
-        ]
+        "psr-4": {
+            "LmcUserDoctrineORM\\": "src/"
+        }
     }
 }
