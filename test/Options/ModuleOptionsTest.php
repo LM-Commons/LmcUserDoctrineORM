@@ -23,4 +23,11 @@ class ModuleOptionsTest extends TestCase
         $moduleOptions = new ModuleOptions();
         self::assertTrue($moduleOptions->getEnableDefaultEntities());
     }
+
+    public function testDisableDefaultEntities(): void
+    {
+        $moduleOptions = new ModuleOptions();
+        $moduleOptions->setEnableDefaultEntities(false);
+        self::assertFalse($moduleOptions->getEnableDefaultEntities());
+    }
 }
