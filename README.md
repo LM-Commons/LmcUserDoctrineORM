@@ -1,8 +1,11 @@
 > ## This is work in progress.  This repo will eventually host a Laminas migrated version of ZfcUserDoctrineORM
 
 
+
 LmcUserDoctrineORM
 ==================
+[![Build Status](https://travis-ci.com/LM-Commons/LmcUserDoctrineORM.svg?branch=master)](https://travis-ci.com/LM-Commons/LmcUserDoctrineORM    )
+[![Coverage Status](https://coveralls.io/repos/github/LM-Commons/LmcUserDoctrineORM/badge.svg?branch=master)](https://coveralls.io/github/LM-Commons/LmcUserDoctrineORM?branch=master)
 Based on ZfcUserDoctrineORM by Kyle Spraggs and the ZF-Commons team
 
 Introduction
