@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/9.3/phpunit.xsd" bootstrap="./vendor/autoload.php"
+         colors="true">
+    <testsuites>
+        <testsuite name="LmcUserDoctrineORM Test Suite">
+            <directory>./test/</directory>
+        </testsuite>
+    </testsuites>
+    <groups>
+        <exclude>
+            <group>disable</group>
+        </exclude>
+    </groups>
+    <coverage includeUncoveredFiles="true">
+        <include>
+            <directory suffix=".php">./src</directory>
+        </include>
+    </coverage>
+    <php>
+        <ini name="date.timezone" value="UTC"/>
+        <ini name="error_reporting" value="E_ALL"/>
+        <ini name="max_execution_time" value="360"/>
+    </php>
+</phpunit>

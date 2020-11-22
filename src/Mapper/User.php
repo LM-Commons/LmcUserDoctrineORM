@@ -75,7 +75,7 @@ class User extends LmcUserMapper
      * @param null                   $tableName
      * @param HydratorInterface|null $hydrator
      *
-     * @return ResultInterface
+     * @return ResultInterface|UserInterface
      */
     public function insert(UserInterface $entity, $tableName = null, HydratorInterface $hydrator = null)
     {
@@ -88,7 +88,7 @@ class User extends LmcUserMapper
      * @param null                   $tableName
      * @param HydratorInterface|null $hydrator
      *
-     * @return ResultInterface
+     * @return ResultInterface|UserInterface
      */
     public function update(UserInterface $entity, $where = null, $tableName = null, HydratorInterface $hydrator = null)
     {
@@ -96,11 +96,11 @@ class User extends LmcUserMapper
     }
 
     /**
-     * @param $entity
+     * @param UserInterface $entity
      *
-     * @return mixed
+     * @return UserInterface
      */
-    protected function persist(UserInterface $entity)
+    protected function persist(UserInterface $entity): UserInterface
     {
         $this->em->persist($entity);
         $this->em->flush();

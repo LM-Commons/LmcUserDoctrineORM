@@ -31,9 +31,30 @@
         "lm-commons/lmc-user": "~3.3",
         "doctrine/doctrine-orm-module": "~3.0"
     },
+    "require-dev": {
+        "laminas/laminas-coding-standard": "~1.0.0",
+        "phpspec/prophecy-phpunit": "^2.0",
+        "phpspec/prophecy": "^1.12",
+        "phpunit/phpunit": "^9.3"
+    },
     "autoload": {
         "psr-4": {
             "LmcUserDoctrineORM\\": "src/"
         }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "LmcUserDoctrineORMTest\\": "test/"
+        }
+    },
+    "scripts": {
+        "check": [
+            "@cs-check",
+            "@test"
+        ],
+        "cs-check": "phpcs",
+        "cs-fix": "phpcbf",
+        "test": "phpunit --colors=always",
+        "test-coverage": "phpunit --colors=always --coverage-clover clover.xml"
     }
 }
