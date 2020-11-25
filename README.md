@@ -1,7 +1,3 @@
-> ## This is work in progress.  This repo will eventually host a Laminas migrated version of ZfcUserDoctrineORM
-
-
-
 LmcUserDoctrineORM
 ==================
 [![Build Status](https://travis-ci.com/LM-Commons/LmcUserDoctrineORM.svg?branch=master)](https://travis-ci.com/LM-Commons/LmcUserDoctrineORM    )
