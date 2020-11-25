@@ -9,9 +9,10 @@ return [
         'driver' => [
             'lmcuser_entity' => [
                 'class' => XmlDriver::class,
-                'paths' => __DIR__ . '/xml/lmcuser'
+                'paths' => [
+                    __DIR__ . '/xml/lmcuser'
+                ]
             ],
-
             'orm_default' => [
                 'drivers' => [
                     'LmcUser\Entity'  => 'lmcuser_entity'

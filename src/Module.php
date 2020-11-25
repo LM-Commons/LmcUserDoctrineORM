@@ -45,8 +45,8 @@ class Module
                 },
                 'lmcuser_user_mapper' => function ($sm) {
                     return new User(
-                        $sm->get('zfcuser_doctrine_em'),
-                        $sm->get('zfcuser_module_options')
+                        $sm->get('lmcuser_doctrine_em'),
+                        $sm->get('lmcuser_module_options')
                     );
                 },
             ],
@@ -58,6 +58,6 @@ class Module
      */
     public function getConfig()
     {
-        return include __DIR__ . '../config/module.config.php';
+        return include __DIR__ . '/../config/module.config.php';
     }
 }
