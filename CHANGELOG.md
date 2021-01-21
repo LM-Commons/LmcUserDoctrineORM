@@ -6,7 +6,7 @@ All notable changes to this project will be documented in this file, in reverse 
 
 ### Added
 
-- Nothing.
+- Using DoctrineObject hydrator instead of ClassMethods hydrator.
 
 ### Deprecated
 
