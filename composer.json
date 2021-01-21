@@ -28,7 +28,7 @@
     ],
     "require": {
         "php": ">=7.3",
-        "lm-commons/lmc-user": "~3.3",
+        "lm-commons/lmc-user": ">=3.3.3",
         "doctrine/doctrine-orm-module": "~3.0"
     },
     "require-dev": {

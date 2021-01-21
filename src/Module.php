@@ -4,8 +4,10 @@ declare(strict_types=1);
 
 namespace LmcUserDoctrineORM;
 
+use Doctrine\Laminas\Hydrator\DoctrineObject;
 use Doctrine\ORM\Mapping\Driver\XmlDriver;
 use Doctrine\ORM\EntityManager;
+use DoctrineORMModule\Service\DoctrineObjectHydratorFactory;
 use LmcUserDoctrineORM\Mapper\User;
 
 /**
@@ -37,12 +39,14 @@ class Module
         return [
             'aliases' => [
                 'lmcuser_doctrine_em' => EntityManager::class,
+                'lmcuser_base_hydrator' => DoctrineObject::class
             ],
             'factories' => [
                 'lmcuser_module_options' => function ($sm) {
                     $config = $sm->get('Configuration');
                     return new Options\ModuleOptions($config['lmcuser'] ?? []);
                 },
+                DoctrineObject::class => DoctrineObjectHydratorFactory::class,
                 'lmcuser_user_mapper' => function ($sm) {
                     return new User(
                         $sm->get('lmcuser_doctrine_em'),
