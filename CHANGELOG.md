@@ -18,7 +18,8 @@ All notable changes to this project will be documented in this file, in reverse 
 
 ### Fixed
 
-- Nothing.
+- Xml directory path.
+
 
 ## 3.0.0 - 2020-11-19
 
