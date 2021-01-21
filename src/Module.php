@@ -25,7 +25,10 @@ class Module
         // Add the default entity driver only if specified in configuration
         if ($options->getEnableDefaultEntities()) {
             $chain = $sm->get('doctrine.driver.orm_default');
-            $chain->addDriver(new XmlDriver(__DIR__ . '/config/xml/lmcuserdoctrineorm'), 'LmcUserDoctrineORM\Entity');
+            $chain->addDriver(
+                new XmlDriver(__DIR__ . '/../config/xml/lmcuserdoctrineorm'),
+                'LmcUserDoctrineORM\Entity'
+            );
         }
     }
 
