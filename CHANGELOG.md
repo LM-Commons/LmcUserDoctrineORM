@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file, in reverse chronological order by release.
 
+## 3.0.2 - 2021-02-11
+
+### Added
+
+- Nothing.
+
+### Deprecated
+
+- Nothing.
+
+### Removed
+
+- Nothing.
+
+### Fixed
+
+- Updated version constraints to be more flexible
+- Added inspection surpressions to some methods
+- Added missing exceptions in tests to phpdoc
+
 ## 3.0.1 - 2021-01-21
 
 ### Added

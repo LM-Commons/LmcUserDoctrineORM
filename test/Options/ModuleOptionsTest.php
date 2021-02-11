@@ -24,6 +24,11 @@ class ModuleOptionsTest extends TestCase
         self::assertTrue($moduleOptions->getEnableDefaultEntities());
     }
 
+    /**
+     * @return void
+     * @throws ExpectationFailedException
+     * @throws InvalidArgumentException
+     */
     public function testDisableDefaultEntities(): void
     {
         $moduleOptions = new ModuleOptions();

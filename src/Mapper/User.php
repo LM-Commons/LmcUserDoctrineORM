@@ -38,6 +38,7 @@ class User extends LmcUserMapper
      * @param $email
      *
      * @return UserInterface|object|null
+     * @noinspection PhpMissingParentCallCommonInspection
      */
     public function findByEmail($email)
     {
@@ -50,6 +51,7 @@ class User extends LmcUserMapper
      * @param string $username
      *
      * @return UserInterface|object|null
+     * @noinspection PhpMissingParentCallCommonInspection
      */
     public function findByUsername($username)
     {
@@ -62,6 +64,7 @@ class User extends LmcUserMapper
      * @param int|string $id
      *
      * @return UserInterface|object|null
+     * @noinspection PhpMissingParentCallCommonInspection
      */
     public function findById($id)
     {
@@ -76,6 +79,7 @@ class User extends LmcUserMapper
      * @param HydratorInterface|null $hydrator
      *
      * @return ResultInterface|UserInterface
+     * @noinspection PhpMissingParentCallCommonInspection
      */
     public function insert(UserInterface $entity, $tableName = null, HydratorInterface $hydrator = null)
     {
@@ -89,6 +93,7 @@ class User extends LmcUserMapper
      * @param HydratorInterface|null $hydrator
      *
      * @return ResultInterface|UserInterface
+     * @noinspection PhpMissingParentCallCommonInspection
      */
     public function update(UserInterface $entity, $where = null, $tableName = null, HydratorInterface $hydrator = null)
     {

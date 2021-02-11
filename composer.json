@@ -6,8 +6,6 @@
     "keywords": [
         "laminas", "LmcUser"
     ],
-    "minimum-stability": "dev",
-    "prefer-stable": true,
     "homepage": "https://github.com/LM-Commons/LmcUserDoctrineORM",
     "authors": [
         {
@@ -28,11 +26,11 @@
     ],
     "require": {
         "php": ">=7.3",
-        "lm-commons/lmc-user": ">=3.3.3",
-        "doctrine/doctrine-orm-module": "~3.0"
+        "lm-commons/lmc-user": "^3.3.3",
+        "doctrine/doctrine-orm-module": "^3.0"
     },
     "require-dev": {
-        "laminas/laminas-coding-standard": "~1.0.0",
+        "laminas/laminas-coding-standard": "^1.0.0",
         "phpspec/prophecy-phpunit": "^2.0",
         "phpspec/prophecy": "^1.12",
         "phpunit/phpunit": "^9.3"

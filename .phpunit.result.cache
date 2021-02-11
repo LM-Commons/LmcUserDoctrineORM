@@ -1,0 +1,1 @@
+C:37:"PHPUnit\Runner\DefaultTestResultCache":243:{a:2:{s:7:"defects";a:0:{}s:5:"times";a:2:{s:95:"LmcUserDoctrineORMTest\Options\ModuleOptionsTest::testEnableDefaultEntitiesReturnsTrueByDefault";d:0.014;s:76:"LmcUserDoctrineORMTest\Options\ModuleOptionsTest::testDisableDefaultEntities";d:0;}}}
